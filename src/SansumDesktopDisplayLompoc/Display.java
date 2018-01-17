@@ -46,7 +46,7 @@ public class Display {
         System.out.println("Updating");
         DataQueryBuilder queryBuilder = DataQueryBuilder.create();
         queryBuilder.setSortBy("created DESC");
-        Backendless.Persistence.of( "Times" ).find(queryBuilder, new AsyncCallback<List<Map>>(){
+        Backendless.Persistence.of( "LompocTimes" ).find(queryBuilder, new AsyncCallback<List<Map>>(){
             @Override
             public void handleResponse( List<Map> foundTimes )
             {
@@ -99,7 +99,7 @@ public class Display {
     public void queryForMessages(){
         System.out.println("Updating Messages");
         DataQueryBuilder queryBuilder = DataQueryBuilder.create();
-        Backendless.Persistence.of( "Messages" ).find(queryBuilder, new AsyncCallback<List<Map>>(){
+        Backendless.Persistence.of( "LompocMessages" ).find(queryBuilder, new AsyncCallback<List<Map>>(){
             @Override
             public void handleResponse( List<Map> foundMessages )
             {
