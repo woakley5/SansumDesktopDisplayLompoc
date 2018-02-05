@@ -159,10 +159,14 @@ public class Display {
                                 hourText = "";
                             }
                             else if(hours == 1){
-                                hourText = hours + " hour\n";
+                                hourText = hours + " hour";
                             }
                             else{
-                                hourText = hours + " hours\n";
+                                hourText = hours + " hours";
+                            }
+
+                            if(minutes != 0 && hours != 0){
+                                hourText += " and\n";
                             }
 
                             if(minutes == 0){
